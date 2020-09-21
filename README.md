@@ -16,5 +16,8 @@ chmod +x redis_getshell.sh
  cat log.txt  进行查看结果。
  
 
- 只有提示全未ok的才为成功写入。
-
+ 只有提示全为ok的才为成功写入。
+ 
+ ERR 说明保存失败。
+ 
+no nuch file for directory 说明 /var/spool/cron目录不存在。
