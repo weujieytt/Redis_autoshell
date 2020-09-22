@@ -4,7 +4,14 @@ Redis Unauthorized access  for exp
 ### 这是一个bashshell脚本。
 
 使用前请确保你的linux主机有redis-cli环境
-
+`安装Redis环境`: wget http://download.redis.io/releases/redis-6.0.8.tar.gz
+```
+tar  -zxvf  redis-6.0.8.tar.gz   # 解压
+gcc -v     # 依赖于gcc 如果安装不成功，可以尝试升级gcc版本。
+cd  redis-6.0.8
+make   # 编译安装
+cd src && cp redis-cli /usr/bin/
+```
 ## 使用方法：
 
 chmod +x redis_getshell.sh 
